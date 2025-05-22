@@ -16,3 +16,7 @@ In the screenshot, the server is running and listening on port 2000, as indicate
 ### 2. ![img](/img/image3.png)
 However, after i change the port on server.rs, everything went back to normal.
 
+## THIRD COMMIT
+
+![img](/img/image4.png)
+In this modification, the server code was updated to include the sender's IP address and port number alongside each message it broadcasts. This change was made to identify the source of each message in the absence of a username or nickname system. Including the socket address (IP:port) of the sender allows users to distinguish which message came from which client, even though they all connect from the same local machine in this test. This helps simulate the concept of "user identity" in a chat environment and lays the groundwork for future improvements like nickname registration or authentication. The change is useful for debugging, understanding client behavior, and improving traceability in a multi-client scenario.
